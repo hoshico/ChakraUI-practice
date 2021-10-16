@@ -17,9 +17,11 @@ export const Login: VFC = memo(() => {
           ユーザー管理アプリ
         </Heading>
         <Divider my={4} />
-        <Stack>
+        <Stack spacing={6} py={4} px={10}>
           <Input placeholder="ユーザーID" />
-          <Button>ログイン</Button>
+          <Button bg="teal.400" color="white" _hover={{ opactiy: 0.8 }}>
+            ログイン
+          </Button>
         </Stack>
       </Box>
     </Flex>
