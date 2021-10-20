@@ -6,7 +6,7 @@ import { User } from "../types/api/user";
 export const useAuth = () => {
   const history = useHistory();
 
-  const [loadding, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const login = useCallback(
     (id: string) => {
@@ -25,5 +25,5 @@ export const useAuth = () => {
     },
     [history]
   );
-  return { login };
+  return { login, loading };
 };
